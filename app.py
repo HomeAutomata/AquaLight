@@ -1,10 +1,5 @@
 #! /usr/bin/python3
 
-# NeoPixel library strandtest example
-# Author: Tony DiCola (tony@tonydicola.com)
-#
-# Direct port of the Arduino NeoPixel library strandtest example.  Showcases
-# various animations on a strip of NeoPixels.
 import time
 import datetime
 from neopixel import *
@@ -63,7 +58,7 @@ if __name__ == '__main__':
 	strip.begin()
 
 	print ('Press Ctrl-C to quit.')
-	
+
 	while True:
 		strip.setBrightness(brightness())
 		rainbowCycle(strip)
