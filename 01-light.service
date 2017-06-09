@@ -1,0 +1,12 @@
+[Unit]
+Description=Aquarium light control system
+After=syslog.target network.target
+
+[Service]
+ExecStart=/home/pi/light/app.py
+WorkingDirectory=/home/pi/light
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+Alias=light
